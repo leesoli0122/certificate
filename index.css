@@ -1,0 +1,37 @@
+@charset "UTF-8";
+* { box-sizing: border-box; word-break:keep-all; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-text-size-adjust: none; word-wrap:break-word; transition: all .2s; }
+html { font-size:18px; background-color: #F8F6FF; }/*  기본 폰트 사이즈 18px */
+body { font-family:'Noto Sans KR', 'Pretendard', 'Spoqa Han Sans Neo', "Apple SD Gothic Neo", sans-serif; font-size:1rem; font-weight:400; color: #454545; line-height: normal; }
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, li, ol, li, table, caption, th, td, form, fieldset, legend, address, div, p, span, a { padding:0; margin:0; }
+ul,ol,li,dl,dt,dd { list-style: none; }
+form, fieldset, legend, input, button, textarea, label { color: #454545; }
+div, img, form, fieldset, button, blockquote, p, hr, select, input { padding:0; margin:0; border:0; font-size:1rem; }
+img, table { width:100%; }
+legend, caption { position:absolute; overflow: hidden; width:1px; height:1px; padding:0; margin:-1px; border:0; white-space: nowrap; clip:rect(0, 0, 0, 0); } /*21.1.28 웹접근성*/
+input, textarea, select, address { font-family: 'Pretendard', 'Spoqa Han Sans Neo', "Apple SD Gothic Neo", sans-serif; }
+input, button, select, textarea { font-family: inherit; }
+input, textarea, select { display:inline-block; vertical-align: middle; color:#454545; }
+
+img { vertical-align:top; font-size:0; line-height:0; }
+table { border-spacing:0; border-collapse: collapse; }
+address, em { font-style: normal; }
+button { background-color:var(--white); text-align:center; cursor:pointer; }
+a { display:block; color:#454545; }
+a, a:hover, a:focus, a:active { text-decoration: none; cursor: pointer; }
+
+/* 사이트 */
+header { display: block; position: sticky; top: 0; z-index: 10; width:100%; height: 70px; padding: 15px 20px; background-color: #DDD5F0; }
+header img { width: auto; height: 40px; }
+
+.content { width: 100%; max-width: 1400px; margin: 0 auto; padding: 64px 20px; }
+.content h2 { color: #333333; }
+
+.content .card-list { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 32px; }
+.card-list .card-item { width: 250px; border: 1px solid #DDDDDD; border-radius: 8px; }
+.card-item .thum-img { width: 100%; height: 180px; background-color: cornflowerblue; }
+.card-item .thum-img img { width: 100%; height: 100%; }
+.card-item .tit-wrap { width: 100%; padding: 12px; }
+.card-item .tit-wrap p { padding-bottom: 12px; font-size: 20px; }
+.card-item .tit-wrap > div { display: flex; align-items: center; justify-content: space-between; }
+.card-item .tit-wrap .btn { padding: 5px 12px; border: 1px solid #E1E1E1; border-radius: 6px; font-size: 16px; }
+.card-item .tit-wrap span { font-size: 14px; color: #999999; }
