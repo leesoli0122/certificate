@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+a {
+    display: block;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    font-size: 0;
+    background-color: green;
+}
+header .h-logo {
+    width: 200px;
+    height: 40px;
+}
+/* 메뉴 */
+nav {
+    display: block;
+    width: 100%;
+}
+.menu > li {
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 4);
+}
+.menu > li > a {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.main .sub-menu {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(5, 49, 5);
+}
